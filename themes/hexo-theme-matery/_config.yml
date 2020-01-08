@@ -42,7 +42,7 @@ menu:
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
+  enable: true
   year: 2020 # 年份
   month: 01 # 月份
   date: 08 # 日期
@@ -64,7 +64,7 @@ cover:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: true
+  enable: false
   showTitle: true
   title: 我的梦想
   text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
@@ -208,22 +208,21 @@ profile:
 myProjects:
   enable: true
   data:
-    hexo-theme-matery:
+    dokit:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    Fenix:
+      url: http://github.com/perye/dokit
+      desc: 基于 Spring Boot2、 Jpa、 Spring Security、JWT、redis、Vue的前后端分离的后台管理系统开发平台， 用户管理、菜单管理、角色管理、字典管理、权限控制的方式为RBAC（Role-Based Access Control，基于角色的访问控制)，操作日志、异常日志、接口限流、项目支持数据权限管理，支持一键生成前后端代码（支持在线预览及打包下载），支持前端菜单动态路由 可一键部署服务器应用，数据库。系统中活跃用户状态监控，监视当前系统CPU、内存、磁盘、堆栈等相关信息。
+    hexo:
         icon: fas fa-database
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
-    typora-vue-theme:
+        url: https://github.com/perye/hexo
+        desc: A fast, simple & powerful blog framework, powered by Node.js.
+    upms:
         icon: fas fa-file-alt
         iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
-
+        url: https://github.com/perye/upms
+        desc: upms微服务化开发平台，具有统一授权、认证后台管理系统，其中包含具备用户管理、资源权限管理等多个模块，支持多业务系统并行开发，可以作为后端服务的开发脚手架。代码简洁，架构清晰。
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
@@ -233,21 +232,36 @@ mySkills:
     Java:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 85%
-    JavaScript:
+    Vue:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
-    HTML5:
+    SpringBoot:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
-    CSS:
+    Mybatis:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
-    SQL:
+    Jpa:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
-    程序设计:
+      percent: 80%
+    Linux:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
+    Mysql:
+      background: 'linear-gradient(to right, #20FF50 0%, #80DEEA 100%)'
+      percent: 75%
+    Oracle:
+      background: 'linear-gradient(to right, #093028 0%, #237A57 100%)'
+      percent: 60%
+    Redis:
+      background: 'linear-gradient(to right, #43C6AC 0%, #F8FFAE 100%)'
+      percent: 60%
+    ElasticSearch:
+      background: 'linear-gradient(to right, #FFAFBD 0%, #ffc3a0 100%)'
+      percent: 60%
+    ElementUI:
+      background: 'linear-gradient(to right, #FFEB3B 0%, #21FDCC 100%)'
+      percent: 60%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -452,7 +466,7 @@ tidio:
 
 #背景canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -469,7 +483,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.

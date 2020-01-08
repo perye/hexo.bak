@@ -1,8 +1,10 @@
 ---
 title: Collections 工具类和 Arrays 工具类常见方法
 top: true
+cover: true
 categories: Java
 tags:
+  - Java
   - Collections
   - Arrays
 abbrlink: eb1e983c
