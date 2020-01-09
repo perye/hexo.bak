@@ -648,6 +648,7 @@ public void add(int index, E element) {
 1. arraycopy()需要目标数组，将原数组拷贝到你自己定义的数组里，而且可以选择拷贝的起点和长度以及放入新数组中的位置
 2. copyOf()是系统自动在内部新建一个数组，并返回该数组。
 #### ArrayList 核心扩容技术
+
 ```java
 //下面是ArrayList的扩容机制
 //ArrayList的扩容机制提高了性能，如果每次只扩充一个，
@@ -689,6 +690,7 @@ public void add(int index, E element) {
     }
 
 ```
+
 ```java
     /**
      * ArrayList扩容的核心方法。
@@ -714,6 +716,7 @@ public void add(int index, E element) {
     }
 
 ```
+
 　　扩容机制代码已经做了详细的解释。另外值得注意的是大家很容易忽略的一个运算符：**移位运算符**
 　　**简介**：移位运算符就是在二进制的基础上对数字进行平移。按照平移的方向和填充数字的规则分为三种:<font color="red"><<(左移)</font>、<font color="red">>>(带符号右移)</font>和<font color="red">>>>(无符号右移)</font>。
 　　**作用**：**对于大数据的2进制运算,位移运算符比那些普通运算符的运算要快很多,因为程序仅仅移动一下而已,不去计算,这样提高了效率,节省了资源**
