@@ -155,9 +155,8 @@ public class StaticDemo {
         StaticBean staticBean3 = new StaticBean(3);
         StaticBean staticBean4 = new StaticBean(4);
         StaticBean.age = 33;
-        StaticBean{name='1'age33} StaticBean{name='2'age33} StaticBean{name='3'age33} StaticBean{name='4'age33}
         System.out.println(staticBean+ +staticBean2+ +staticBean3+ +staticBean4);
-        StaticBean.SayHello();Hello i am java
+        StaticBean.SayHello();//Hello i am java
     }
 
 }
@@ -197,11 +196,11 @@ Example（静态内部类实现单例模式）
 ```java
 public class Singleton {
 
-    声明为 private 避免调用默认构造方法创建对象
+//    声明为 private 避免调用默认构造方法创建对象
     private Singleton() {
     }
 
-    声明为 private 表明静态内部该类只能在该 Singleton 类中被访问
+  //  声明为 private 表明静态内部该类只能在该 Singleton 类中被访问
     private static class SingletonHolder {
         private static final Singleton INSTANCE = new Singleton();
     }
@@ -225,12 +224,12 @@ public class Singleton {
 ```java
 
 
-  Math. --- 将Math中的所有静态资源导入，这时候可以直接使用里面的静态方法，而不用通过类名进行调用
-  如果只想导入单一某个静态方法，只需要将换成对应的方法名即可
+//  Math. --- 将Math中的所有静态资源导入，这时候可以直接使用里面的静态方法，而不用通过类名进行调用
+//  如果只想导入单一某个静态方法，只需要将换成对应的方法名即可
 
 import static java.lang.Math.;
 
-  换成import static java.lang.Math.max;具有一样的效果
+//  换成import static java.lang.Math.max;具有一样的效果
 
 public class Demo {
   public static void main(String[] args) {
@@ -259,12 +258,12 @@ class Foo {
     }
 
     public static String method1() {
-       return An example string that doesn't depend on i (an instance variable);
+       return "An example string that doesn't depend on i (an instance variable)";
 
     }
 
     public int method2() {
-       return this.i + 1;  Depends on i
+       return this.i + 1;  //Depends on i
     }
 
 }
@@ -311,7 +310,7 @@ public class Test {
     public static void main(String[] args) {
 
         Test test = new Test();   
-        Test.test();静态代码块！--静态方法中的内容! --静态方法中的代码块！--
+        Test.test();// 静态代码块！--静态方法中的内容! --静态方法中的代码块！--
     }
 ```
 
