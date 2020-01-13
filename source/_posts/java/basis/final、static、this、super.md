@@ -1,7 +1,5 @@
 ---
 title: 'final,static,this,super 关键字总结'
-top: true
-cover: true
 categories: Java
 tags:
   - Java

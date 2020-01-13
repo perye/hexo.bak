@@ -1,7 +1,5 @@
 ---
 title: HashMap 简介
-top: true
-cover: true
 categories: Java
 tags:
   - Java
@@ -9,6 +7,7 @@ tags:
 keywords: HashMap 简介
 abbrlink: 70f3ef08
 date: 2020-01-09 15:56:40
+indexing: false
 ---
 
 HashMap 主要用来存放键值对，它基于哈希表的Map接口实现，是常用的Java集合之一。

@@ -1,7 +1,5 @@
 ---
 title: LinkedList 简介
-top: true
-cover: true
 categories: Java
 tags:
   - Java
