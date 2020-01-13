@@ -16,7 +16,7 @@ SpringBoot是在Spring框架上创建的一个全新的框架，其设计目的�
 
 访问[http://start.spring.io/]()，页面显示如下：
 
-![官网生成项目文件](../../../images/Java/Spring/开启SpringBoot/01.png)
+![官网生成项目文件](../../../images/java/spring/开启SpringBoot/01.png)
 
 这里选择以Maven构建，语言选择Java，Spring Boot版本为2.2.2。下方可选择依赖包,然后点击生成即可自动下载.
 将项目文件导入IDE中即可使用.
@@ -24,17 +24,17 @@ SpringBoot是在Spring框架上创建的一个全新的框架，其设计目的�
 ## 方法二:IDEA直接生成(推荐)
 
 创建新项目,选择Spring Initalizr
-![IDEA生成项目](../../../images/Java/Spring/开启SpringBoot/02.png)
+![IDEA生成项目](../../../images/java/spring/开启SpringBoot/02.png)
 
 选Next,然后配置相关信息
-![配置相关信息](../../../images/Java/Spring/开启SpringBoot/03.png)
+![配置相关信息](../../../images/java/spring/开启SpringBoot/03.png)
 
 选Next,可选择依赖包
-![选择依赖包](../../../images/Java/Spring/开启SpringBoot/04.png)
+![选择依赖包](../../../images/java/spring/开启SpringBoot/04.png)
 
 项目目录如下所示：
 
-![项目目录](../../../images/Java/Spring/开启SpringBoot/05.png)
+![项目目录](../../../images/java/spring/开启SpringBoot/05.png)
 
 ## 简单演示
 
@@ -67,7 +67,7 @@ public class DemotestApplication {
 
 运行访问[http://localhost:8080](http://localhost:8080),页面显示如下：
 
-![演示](../../../images/Java/Spring/开启SpringBoot/06.png)
+![演示](../../../images/java/spring/开启SpringBoot/06.png)
 
 ## 打包发布
 ```
