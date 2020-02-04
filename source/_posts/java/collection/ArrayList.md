@@ -1,7 +1,7 @@
 ---
 title: ArrayList简介
-top: true
-cover: true
+top: false
+cover: false
 categories: Java
 tags:
   - Java

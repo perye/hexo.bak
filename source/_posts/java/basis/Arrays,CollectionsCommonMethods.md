@@ -1,7 +1,7 @@
 ---
 title: Collections 工具类和 Arrays 工具类常见方法
-top: true
-cover: true
+top: false
+cover: false
 categories: Java
 tags:
   - Java
